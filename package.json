@@ -1,6 +1,6 @@
 {
   "name": "gnubuntu-hidpi-script",
-  "version": "0.1.1",
+  "version": "1.0.1",
   "description": "Changes appropriate settings in Firefox/VS Code/etc. to make it easier to use, visually, when on a HiDPI screen",
   "main": "index.ts",
   "scripts": {
