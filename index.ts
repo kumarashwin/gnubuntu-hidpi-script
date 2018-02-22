@@ -51,7 +51,7 @@ const firefox = async (isLaptop?: true) => {
 };
 
 const vsCode = async (isLaptop?: true) => {
-	const path = '/home/askumar/.config/Code/User/settings.json';
+	const { stdout: path, stderr } = await exec('printf ~/.config/Code/User/settings.json');
 	const vsCodeSettings = require(path);
 	const currZoom = vsCodeSettings["window.zoomLevel"];
 	vsCodeSettings["window.zoomLevel"] = isLaptop ? 1.5 : 0.75;
